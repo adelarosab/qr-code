@@ -1,0 +1,31 @@
+<link rel="import" href="../polymer/polymer.html">
+<!--
+An element providing qr-code.
+
+Example:
+
+    <qr-code data="Hello world"></qr-code>
+
+@group QR-Code Elements
+@element qr-code
+@demo demo/index.html
+-->
+<dom-module id="qr-code">
+  <template>
+    <style>
+      :host {
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+      }
+  
+      img {
+        height: 100%;
+        position: relative;
+        width: 100%;
+      }
+    </style>
+    <img alt="[[data]]" src="[[_computedURI]]">
+  </template>
+</dom-module>
+<script src="qr-code.js"></script>
